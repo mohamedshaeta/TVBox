@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8209D029256F9A4C006F4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D028256F9A4C006F4E9F /* AppDelegate.swift */; };
-		8209D02B256F9A4C006F4E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D02A256F9A4C006F4E9F /* SceneDelegate.swift */; };
 		8209D02D256F9A4C006F4E9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D02C256F9A4C006F4E9F /* ViewController.swift */; };
 		8209D030256F9A4C006F4E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8209D02E256F9A4C006F4E9F /* Main.storyboard */; };
 		8209D032256F9A4E006F4E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8209D031256F9A4E006F4E9F /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		8209D025256F9A4C006F4E9F /* TVBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8209D028256F9A4C006F4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8209D02A256F9A4C006F4E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8209D02C256F9A4C006F4E9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8209D02F256F9A4C006F4E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8209D031256F9A4E006F4E9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				8209D028256F9A4C006F4E9F /* AppDelegate.swift */,
-				8209D02A256F9A4C006F4E9F /* SceneDelegate.swift */,
 				8209D02C256F9A4C006F4E9F /* ViewController.swift */,
 				8209D02E256F9A4C006F4E9F /* Main.storyboard */,
 				8209D031256F9A4E006F4E9F /* Assets.xcassets */,
@@ -260,7 +257,6 @@
 			files = (
 				8209D02D256F9A4C006F4E9F /* ViewController.swift in Sources */,
 				8209D029256F9A4C006F4E9F /* AppDelegate.swift in Sources */,
-				8209D02B256F9A4C006F4E9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +434,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TVBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,7 +442,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = digitalfactory.TVBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TVBox/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -463,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = digitalfactory.TVBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
