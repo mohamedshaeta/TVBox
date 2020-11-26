@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820322D02570287E00FDDE8F /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820322CF2570287E00FDDE8F /* RatingView.swift */; };
 		8209D029256F9A4C006F4E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D028256F9A4C006F4E9F /* AppDelegate.swift */; };
 		8209D030256F9A4C006F4E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8209D02E256F9A4C006F4E9F /* Main.storyboard */; };
 		8209D032256F9A4E006F4E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8209D031256F9A4E006F4E9F /* Assets.xcassets */; };
@@ -29,6 +30,16 @@
 		8209D0D7256FB001006F4E9F /* TVShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */; };
 		8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */; };
 		8209D0DD256FB24D006F4E9F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0DC256FB24D006F4E9F /* UIImageView.swift */; };
+		825EEC40256FC0F40012DB5C /* TVShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC3F256FC0F40012DB5C /* TVShowDetailsViewController.swift */; };
+		825EEC45256FC1080012DB5C /* TVShowDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC44256FC1080012DB5C /* TVShowDetailsPresenter.swift */; };
+		825EEC4C256FDB730012DB5C /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC4A256FDB730012DB5C /* PhotoCollectionViewCell.swift */; };
+		825EEC4D256FDB730012DB5C /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825EEC4B256FDB730012DB5C /* PhotoCollectionViewCell.xib */; };
+		825EEC52256FF2A40012DB5C /* AuthenticationRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC51256FF2A40012DB5C /* AuthenticationRequests.swift */; };
+		825EEC57256FF3100012DB5C /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC56256FF3100012DB5C /* AuthenticationResponse.swift */; };
+		825EEC6E2570077C0012DB5C /* PhotosCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC6D2570077C0012DB5C /* PhotosCollectionViewDelegate.swift */; };
+		825EEC762570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC752570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift */; };
+		825EEC7C257014920012DB5C /* TVShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC7A257014920012DB5C /* TVShowCollectionViewCell.swift */; };
+		825EEC7D257014920012DB5C /* TVShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825EEC7B257014920012DB5C /* TVShowCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		820322CF2570287E00FDDE8F /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		8209D025256F9A4C006F4E9F /* TVBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8209D028256F9A4C006F4E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8209D02F256F9A4C006F4E9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -77,6 +89,16 @@
 		8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowTableViewCell.swift; sourceTree = "<group>"; };
 		8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowTableViewCell.xib; sourceTree = "<group>"; };
 		8209D0DC256FB24D006F4E9F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		825EEC3F256FC0F40012DB5C /* TVShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsViewController.swift; sourceTree = "<group>"; };
+		825EEC44256FC1080012DB5C /* TVShowDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsPresenter.swift; sourceTree = "<group>"; };
+		825EEC4A256FDB730012DB5C /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		825EEC4B256FDB730012DB5C /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		825EEC51256FF2A40012DB5C /* AuthenticationRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRequests.swift; sourceTree = "<group>"; };
+		825EEC56256FF3100012DB5C /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
+		825EEC6D2570077C0012DB5C /* PhotosCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		825EEC752570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilerTVShowsCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		825EEC7A257014920012DB5C /* TVShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		825EEC7B257014920012DB5C /* TVShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +126,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		820322BF25701C8500FDDE8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		820322CE2570287000FDDE8F /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				820322CF2570287E00FDDE8F /* RatingView.swift */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		820322D725702E7900FDDE8F /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				825EEC6D2570077C0012DB5C /* PhotosCollectionViewDelegate.swift */,
+				825EEC752570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
 		8209D01C256F9A4C006F4E9F = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +157,7 @@
 				8209D03E256F9A4E006F4E9F /* TVBoxTests */,
 				8209D049256F9A4E006F4E9F /* TVBoxUITests */,
 				8209D026256F9A4C006F4E9F /* Products */,
+				820322BF25701C8500FDDE8F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -250,6 +297,9 @@
 		8209D07C256F9E5D006F4E9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				825EEC49256FDB550012DB5C /* Cells */,
+				820322D725702E7900FDDE8F /* delegates */,
+				825EEC3F256FC0F40012DB5C /* TVShowDetailsViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +307,7 @@
 		8209D07D256F9E62006F4E9F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				825EEC44256FC1080012DB5C /* TVShowDetailsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -292,6 +343,8 @@
 			children = (
 				8209D09E256FA82E006F4E9F /* TVShowsRequests.swift */,
 				8209D0A6256FA8D2006F4E9F /* TVShows.swift */,
+				825EEC51256FF2A40012DB5C /* AuthenticationRequests.swift */,
+				825EEC56256FF3100012DB5C /* AuthenticationResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -299,6 +352,7 @@
 		8209D0BD256FA9F4006F4E9F /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				820322CE2570287000FDDE8F /* Rating */,
 				8209D0CB256FAA19006F4E9F /* LoadingView */,
 			);
 			path = CustomViews;
@@ -322,6 +376,17 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		825EEC49256FDB550012DB5C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				825EEC4A256FDB730012DB5C /* PhotoCollectionViewCell.swift */,
+				825EEC4B256FDB730012DB5C /* PhotoCollectionViewCell.xib */,
+				825EEC7A257014920012DB5C /* TVShowCollectionViewCell.swift */,
+				825EEC7B257014920012DB5C /* TVShowCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +403,8 @@
 			dependencies = (
 			);
 			name = TVBox;
+			packageProductDependencies = (
+			);
 			productName = TVBox;
 			productReference = 8209D025256F9A4C006F4E9F /* TVBox.app */;
 			productType = "com.apple.product-type.application";
@@ -409,6 +476,8 @@
 				Base,
 			);
 			mainGroup = 8209D01C256F9A4C006F4E9F;
+			packageReferences = (
+			);
 			productRefGroup = 8209D026256F9A4C006F4E9F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -426,8 +495,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8209D035256F9A4E006F4E9F /* LaunchScreen.storyboard in Resources */,
+				825EEC7D257014920012DB5C /* TVShowCollectionViewCell.xib in Resources */,
 				8209D0C7256FAA14006F4E9F /* LoadingView.xib in Resources */,
 				8209D032256F9A4E006F4E9F /* Assets.xcassets in Resources */,
+				825EEC4D256FDB730012DB5C /* PhotoCollectionViewCell.xib in Resources */,
 				8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */,
 				8209D030256F9A4C006F4E9F /* Main.storyboard in Resources */,
 			);
@@ -457,18 +528,27 @@
 				8209D0AC256FA98A006F4E9F /* TVShowsListingPresenter.swift in Sources */,
 				8209D0DD256FB24D006F4E9F /* UIImageView.swift in Sources */,
 				8209D09F256FA82E006F4E9F /* TVShowsRequests.swift in Sources */,
+				820322D02570287E00FDDE8F /* RatingView.swift in Sources */,
 				8209D0D7256FB001006F4E9F /* TVShowTableViewCell.swift in Sources */,
+				825EEC40256FC0F40012DB5C /* TVShowDetailsViewController.swift in Sources */,
+				825EEC4C256FDB730012DB5C /* PhotoCollectionViewCell.swift in Sources */,
 				8209D099256FA0E9006F4E9F /* String.swift in Sources */,
 				8209D082256F9F48006F4E9F /* ClientManager.swift in Sources */,
 				8209D08F256F9FF5006F4E9F /* Keys.swift in Sources */,
 				8209D0BF256FAA08006F4E9F /* LoadingView.swift in Sources */,
+				825EEC762570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift in Sources */,
+				825EEC7C257014920012DB5C /* TVShowCollectionViewCell.swift in Sources */,
 				8209D0B4256FA99E006F4E9F /* BaseViewController.swift in Sources */,
+				825EEC45256FC1080012DB5C /* TVShowDetailsPresenter.swift in Sources */,
 				8209D094256FA00B006F4E9F /* DependencyRegistry.swift in Sources */,
 				8209D029256F9A4C006F4E9F /* AppDelegate.swift in Sources */,
 				8209D0A7256FA8D2006F4E9F /* TVShows.swift in Sources */,
 				8209D08A256F9F71006F4E9F /* ClientInterfaces.swift in Sources */,
+				825EEC6E2570077C0012DB5C /* PhotosCollectionViewDelegate.swift in Sources */,
 				8209D0D0256FABC0006F4E9F /* TVShowsListingViewController.swift in Sources */,
 				8209D0B9256FA9AA006F4E9F /* BasePresenter.swift in Sources */,
+				825EEC57256FF3100012DB5C /* AuthenticationResponse.swift in Sources */,
+				825EEC52256FF2A40012DB5C /* AuthenticationRequests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

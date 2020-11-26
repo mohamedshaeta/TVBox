@@ -12,6 +12,7 @@ class TVShowsListingViewController: BaseViewController {
     //MARK: - Outlets
     @IBOutlet weak var tvShowsTableView: UITableView!
     
+    
     //MARK: - Global Properties
     var tvShowsPresenter: TVShowsListingPresenter?
     var tvShows: TVShows?
@@ -47,13 +48,29 @@ class TVShowsListingViewController: BaseViewController {
         let tvShowCell = UINib(nibName: TVShowTableViewCell.nibName, bundle: nil)
         self.tvShowsTableView.register(tvShowCell, forCellReuseIdentifier: TVShowTableViewCell.identifier )
     }
+    //MARK: - Helpers
+    func openTVShowDetails(tvShow: TVShow) {
+        let tvShowDetailsView = TVShowDetailsViewController.instantiateTVShowDetailsViewController()
+        tvShowDetailsView.tvShow = tvShow
+        self.navigationController?.pushViewController(tvShowDetailsView, animated: true)
+    }
+    
+    func setupRatingView() {
+        
+    }
+    
+    
 }
 
 //MARK: - Extensions
 //MARK TableViewDelegate
 
 extension TVShowsListingViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let tvShow = self.tvShows?[indexPath.row] {
+            openTVShowDetails(tvShow: tvShow)
+        }
+    }
 }
 //MARK TableViewDelegate
 extension TVShowsListingViewController: UITableViewDataSource {
@@ -72,7 +89,7 @@ extension TVShowsListingViewController: UITableViewDataSource {
 }
 
 //MARK: - Preseter
-extension TVShowsListingViewController: TVShowsListingPresenterDelegate {
+extension TVShowsListingViewController: TVShowsListingDelegate {
     func updateTVShows(tvShows: TVShows) {
         self.tvShows = tvShows
         DispatchQueue.main.async {
@@ -80,3 +97,4 @@ extension TVShowsListingViewController: TVShowsListingPresenterDelegate {
         }
     }
 }
+

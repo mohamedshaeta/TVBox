@@ -49,8 +49,8 @@ extension BaseViewController: BaseViewDelegate{
     }
     
     func hideLoading() {
-        if loadingView != nil {
-            DispatchQueue.main.async {
+        DispatchQueue.main.async {
+            if self.loadingView != nil {
                 self.loadingView.stopAnimating()
                 self.loadingView = nil
             }

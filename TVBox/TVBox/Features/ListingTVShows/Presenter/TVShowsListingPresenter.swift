@@ -6,7 +6,7 @@
 //
 
 import Foundation
-protocol TVShowsListingPresenterDelegate: BaseViewDelegate {
+protocol TVShowsListingDelegate: BaseViewDelegate {
     func updateTVShows(tvShows: TVShows)
 }
 
@@ -14,12 +14,12 @@ class TVShowsListingPresenter: BasePresenter {
     func fetchTVShows() {
         viewDelegate?.showLoading()
         let clientManager = DependencyRegistry.sharedInstance.getCLientManager()
-        clientManager.dataRequest(with: TVShowsRequests.tvShows, responseObjectType: TVShowsResponse.self) { (result) in
+        clientManager.dataRequest(with: TVShowsRequests.fetchTVShows, responseObjectType: TVShowsResponse.self) { (result) in
             self.viewDelegate?.hideLoading()
             switch result {
             case .success(let response):
                 let sortedTVShows = self.sortTVShowsByRating(tvShows: response.results ?? [])
-                (self.viewDelegate as! TVShowsListingPresenterDelegate).updateTVShows(tvShows: sortedTVShows)
+                (self.viewDelegate as! TVShowsListingDelegate).updateTVShows(tvShows: sortedTVShows)
             case .failure(let error):
                 self.viewDelegate?.showError(with: error.errorMessage())
             }

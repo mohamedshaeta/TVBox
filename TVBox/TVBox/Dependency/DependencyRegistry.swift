@@ -15,6 +15,10 @@ class DependencyRegistry {
     func getTVShowsListingPresenter() -> TVShowsListingPresenter {
         return TVShowsListingPresenter()
     }
+    
+    func getTVShowDetailsPresenter() -> TVShowDetailsPresenter {
+        return TVShowDetailsPresenter()
+    }
 
     // MARK: - Network
     func getCLientManager() -> ClientManager {

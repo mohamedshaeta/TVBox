@@ -18,4 +18,12 @@ class Keys{
            return Bundle.main.object(forInfoDictionaryKey: "Image_Base_URL") as? String ?? ""
         }
     }
+    
+    static var Moviedb_API_Key: String  {
+        get {
+           return Bundle.main.object(forInfoDictionaryKey: "Moviedb_API_Key") as? String ?? ""
+        }
+    }
+    
+    
 }
