@@ -11,12 +11,10 @@ class DependencyRegistry {
     static var sharedInstance: DependencyRegistry = DependencyRegistry()
     
     // MARK: - Presenters
-   
     
-//    func getResetPasswordPresenter() -> ResetPasswordPresenter {
-//        return ResetPasswordPresenter()
-//    }
-    
+    func getTVShowsListingPresenter() -> TVShowsListingPresenter {
+        return TVShowsListingPresenter()
+    }
 
     // MARK: - Network
     func getCLientManager() -> ClientManager {

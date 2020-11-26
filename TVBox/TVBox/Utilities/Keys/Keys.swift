@@ -12,4 +12,10 @@ class Keys{
            return Bundle.main.object(forInfoDictionaryKey: "Base_URL") as? String ?? ""
         }
     }
+    
+    static var ImageBaseUrl: String  {
+        get {
+           return Bundle.main.object(forInfoDictionaryKey: "Image_Base_URL") as? String ?? ""
+        }
+    }
 }

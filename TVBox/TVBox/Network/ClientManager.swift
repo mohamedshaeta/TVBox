@@ -59,7 +59,9 @@ class ClientManager {
                 let dataStr = String(data: data, encoding: String.Encoding.utf8)
                 //    print(dataStr)
                 if  responseObjectType != String.self {
-                    let decodedObject = try JSONDecoder().decode(responseObjectType.self, from: data)
+                    let jsonDecoder = JSONDecoder()
+                    jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
+                    let decodedObject = try jsonDecoder.decode(responseObjectType.self, from: data)
                     completion(Result.success(decodedObject))
                 }else {
                     completion(Result.success(dataStr as! T))

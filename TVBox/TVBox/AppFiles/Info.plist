@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Base_URL</key>
+	<string>https://api.themoviedb.org/3/tv/</string>
+	<key>Image_Base_URL</key>
+	<string>https://image.tmdb.org/t/p/w500/</string>
 </dict>
 </plist>

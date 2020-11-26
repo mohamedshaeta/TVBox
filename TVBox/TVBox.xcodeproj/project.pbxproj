@@ -18,6 +18,17 @@
 		8209D08F256F9FF5006F4E9F /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D08E256F9FF5006F4E9F /* Keys.swift */; };
 		8209D094256FA00B006F4E9F /* DependencyRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D093256FA00B006F4E9F /* DependencyRegistry.swift */; };
 		8209D099256FA0E9006F4E9F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D098256FA0E9006F4E9F /* String.swift */; };
+		8209D09F256FA82E006F4E9F /* TVShowsRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D09E256FA82E006F4E9F /* TVShowsRequests.swift */; };
+		8209D0A7256FA8D2006F4E9F /* TVShows.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0A6256FA8D2006F4E9F /* TVShows.swift */; };
+		8209D0AC256FA98A006F4E9F /* TVShowsListingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0AB256FA98A006F4E9F /* TVShowsListingPresenter.swift */; };
+		8209D0B4256FA99E006F4E9F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0B3256FA99E006F4E9F /* BaseViewController.swift */; };
+		8209D0B9256FA9AA006F4E9F /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0B8256FA9AA006F4E9F /* BasePresenter.swift */; };
+		8209D0BF256FAA08006F4E9F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0BE256FAA08006F4E9F /* LoadingView.swift */; };
+		8209D0C7256FAA14006F4E9F /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209D0C6256FAA14006F4E9F /* LoadingView.xib */; };
+		8209D0D0256FABC0006F4E9F /* TVShowsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */; };
+		8209D0D7256FB001006F4E9F /* TVShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */; };
+		8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */; };
+		8209D0DD256FB24D006F4E9F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0DC256FB24D006F4E9F /* UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +66,17 @@
 		8209D08E256F9FF5006F4E9F /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		8209D093256FA00B006F4E9F /* DependencyRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyRegistry.swift; sourceTree = "<group>"; };
 		8209D098256FA0E9006F4E9F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		8209D09E256FA82E006F4E9F /* TVShowsRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsRequests.swift; sourceTree = "<group>"; };
+		8209D0A6256FA8D2006F4E9F /* TVShows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShows.swift; sourceTree = "<group>"; };
+		8209D0AB256FA98A006F4E9F /* TVShowsListingPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsListingPresenter.swift; sourceTree = "<group>"; };
+		8209D0B3256FA99E006F4E9F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8209D0B8256FA9AA006F4E9F /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		8209D0BE256FAA08006F4E9F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		8209D0C6256FAA14006F4E9F /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsListingViewController.swift; sourceTree = "<group>"; };
+		8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowTableViewCell.swift; sourceTree = "<group>"; };
+		8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowTableViewCell.xib; sourceTree = "<group>"; };
+		8209D0DC256FB24D006F4E9F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8209D06A256F9D79006F4E9F /* Features */,
+				8209D09D256FA7A3006F4E9F /* Models */,
 				8209D06C256F9D94006F4E9F /* Network */,
 				8209D06D256F9DA1006F4E9F /* Utilities */,
 				8209D071256F9DC5006F4E9F /* AppFiles */,
@@ -155,6 +178,7 @@
 		8209D06D256F9DA1006F4E9F /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8209D0BD256FA9F4006F4E9F /* CustomViews */,
 				8209D080256F9E92006F4E9F /* Keys */,
 				8209D07F256F9E81006F4E9F /* BaseClasses */,
 				8209D07E256F9E74006F4E9F /* Exensions */,
@@ -209,6 +233,8 @@
 		8209D07A256F9E4F006F4E9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8209D0D4256FAFE3006F4E9F /* Cells */,
+				8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +242,7 @@
 		8209D07B256F9E56006F4E9F /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				8209D0AB256FA98A006F4E9F /* TVShowsListingPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -238,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				8209D098256FA0E9006F4E9F /* String.swift */,
+				8209D0DC256FB24D006F4E9F /* UIImageView.swift */,
 			);
 			path = Exensions;
 			sourceTree = "<group>";
@@ -245,6 +273,8 @@
 		8209D07F256F9E81006F4E9F /* BaseClasses */ = {
 			isa = PBXGroup;
 			children = (
+				8209D0B3256FA99E006F4E9F /* BaseViewController.swift */,
+				8209D0B8256FA9AA006F4E9F /* BasePresenter.swift */,
 			);
 			path = BaseClasses;
 			sourceTree = "<group>";
@@ -255,6 +285,41 @@
 				8209D08E256F9FF5006F4E9F /* Keys.swift */,
 			);
 			path = Keys;
+			sourceTree = "<group>";
+		};
+		8209D09D256FA7A3006F4E9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8209D09E256FA82E006F4E9F /* TVShowsRequests.swift */,
+				8209D0A6256FA8D2006F4E9F /* TVShows.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8209D0BD256FA9F4006F4E9F /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				8209D0CB256FAA19006F4E9F /* LoadingView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8209D0CB256FAA19006F4E9F /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				8209D0BE256FAA08006F4E9F /* LoadingView.swift */,
+				8209D0C6256FAA14006F4E9F /* LoadingView.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		8209D0D4256FAFE3006F4E9F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */,
+				8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +426,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8209D035256F9A4E006F4E9F /* LaunchScreen.storyboard in Resources */,
+				8209D0C7256FAA14006F4E9F /* LoadingView.xib in Resources */,
 				8209D032256F9A4E006F4E9F /* Assets.xcassets in Resources */,
+				8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */,
 				8209D030256F9A4C006F4E9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,12 +454,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8209D0AC256FA98A006F4E9F /* TVShowsListingPresenter.swift in Sources */,
+				8209D0DD256FB24D006F4E9F /* UIImageView.swift in Sources */,
+				8209D09F256FA82E006F4E9F /* TVShowsRequests.swift in Sources */,
+				8209D0D7256FB001006F4E9F /* TVShowTableViewCell.swift in Sources */,
 				8209D099256FA0E9006F4E9F /* String.swift in Sources */,
 				8209D082256F9F48006F4E9F /* ClientManager.swift in Sources */,
 				8209D08F256F9FF5006F4E9F /* Keys.swift in Sources */,
+				8209D0BF256FAA08006F4E9F /* LoadingView.swift in Sources */,
+				8209D0B4256FA99E006F4E9F /* BaseViewController.swift in Sources */,
 				8209D094256FA00B006F4E9F /* DependencyRegistry.swift in Sources */,
 				8209D029256F9A4C006F4E9F /* AppDelegate.swift in Sources */,
+				8209D0A7256FA8D2006F4E9F /* TVShows.swift in Sources */,
 				8209D08A256F9F71006F4E9F /* ClientInterfaces.swift in Sources */,
+				8209D0D0256FABC0006F4E9F /* TVShowsListingViewController.swift in Sources */,
+				8209D0B9256FA9AA006F4E9F /* BasePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
