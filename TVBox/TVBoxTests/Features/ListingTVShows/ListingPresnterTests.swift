@@ -19,23 +19,23 @@ class ListingPresnterTests: XCTestCase {
         
         
         //then
-        XCTAssertNotNil(tvshowsPresenter, "Failed to initialize the tvShowsTableView.")
+        XCTAssertNotNil(tvshowsPresenter, "Failed to initialize the tvshowsPresenter.")
     }
     
     func testWhenFetchedTVShowsData_TVListUpdated() {
         //given
         DependencyRegistry.sharedInstance = DependencyRegistryMock()
         let tvshowsPresenter = DependencyRegistry.sharedInstance.getTVShowsListingPresenter()
-        tvshowsPresenter.viewDelegate = TVSowsPresenterViewDelegateMock()
+        tvshowsPresenter.viewDelegate = TVShowsPresenterViewDelegateMock()
         
         //when
         tvshowsPresenter.fetchTVShows()
         
         //then
-        XCTAssertTrue((tvshowsPresenter.viewDelegate as! TVSowsPresenterViewDelegateMock).isTVShowsListUpdated,"Failed to updated list after fetching data")
+        XCTAssertTrue((tvshowsPresenter.viewDelegate as! TVShowsPresenterViewDelegateMock).isTVShowsListUpdated,"Failed to updated list after fetching data")
     }
     
-    func testWhenFetchedTVShowsData_InvalidURL_TVListUpdated() {
+    func testWhenFetchedTVShowsData_InvalidURL_ErrorShown() {
         //given
         let dependencyRegistryMock = DependencyRegistryMock()
         let clientManagerMock = ClientManagerMock()
@@ -43,20 +43,20 @@ class ListingPresnterTests: XCTestCase {
         dependencyRegistryMock.clientManger = clientManagerMock
         DependencyRegistry.sharedInstance = dependencyRegistryMock
         let tvshowsPresenter = DependencyRegistry.sharedInstance.getTVShowsListingPresenter()
-        tvshowsPresenter.viewDelegate = TVSowsPresenterViewDelegateMock()
+        tvshowsPresenter.viewDelegate = TVShowsPresenterViewDelegateMock()
         
         //when
         tvshowsPresenter.fetchTVShows()
         
         //then
-        XCTAssertFalse((tvshowsPresenter.viewDelegate as! TVSowsPresenterViewDelegateMock).isTVShowsListUpdated,"Update tvshows data even invalid server id")
-        XCTAssertTrue((tvshowsPresenter.viewDelegate as! TVSowsPresenterViewDelegateMock).isErrorShown,"Failed to updated list after fetching data")
+        XCTAssertFalse((tvshowsPresenter.viewDelegate as! TVShowsPresenterViewDelegateMock).isTVShowsListUpdated,"Update tvshows data even invalid server id")
+        XCTAssertTrue((tvshowsPresenter.viewDelegate as! TVShowsPresenterViewDelegateMock).isErrorShown,"Failed to updated list after fetching data")
     }
     
     func testWhenSortTVShows_TVShowsSortedASC() {
         //given
         let tvshowsPresenter = DependencyRegistry.sharedInstance.getTVShowsListingPresenter()
-        tvshowsPresenter.viewDelegate = TVSowsPresenterViewDelegateMock()
+        tvshowsPresenter.viewDelegate = TVShowsPresenterViewDelegateMock()
         
         //when
        let sortedTVShow = tvshowsPresenter.sortTVShowsByRating(tvShows: getUnSortedTVShows())
@@ -90,19 +90,19 @@ fileprivate class DependencyRegistryMock: DependencyRegistry {
         return tvShowsListingPresenterMock ?? TVShowsListingPresenterMock()
     }
     
-    override func getCLientManager() -> ClientManager {
+    override func getClientManager() -> ClientManager {
         return clientManger ?? ClientManagerMock()
     }
 }
 
 fileprivate class TVShowsListingPresenterMock: TVShowsListingPresenter {
-    var presenterViewDelegate: TVSowsPresenterViewDelegateMock?
+    var presenterViewDelegate: TVShowsPresenterViewDelegateMock?
     override func sortTVShowsByRating(tvShows: TVShows) -> TVShows {
         return tvShows
     }
 }
 
-fileprivate class TVSowsPresenterViewDelegateMock: TVShowsListingDelegate {
+fileprivate class TVShowsPresenterViewDelegateMock: TVShowsListingDelegate {
     var isTVShowsListUpdated = false
     var isErrorShown = false
     func updateTVShows(tvShows: TVShows) {

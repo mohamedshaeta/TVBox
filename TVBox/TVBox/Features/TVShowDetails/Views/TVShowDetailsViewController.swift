@@ -20,6 +20,7 @@ class TVShowDetailsViewController: BaseViewController {
     @IBOutlet weak var postersCollectionView: UICollectionView!
     @IBOutlet weak var similarTVShowsCollectionView: UICollectionView!
     @IBOutlet weak var ratingView: CosmosView!
+    @IBOutlet weak var rateButton: UIButton!
     
     //MARK: - Global Properties
     var tvShowDetailsPresenter: TVShowDetailsPresenter?
@@ -34,6 +35,7 @@ class TVShowDetailsViewController: BaseViewController {
         setupsSimilarTVShowsCollectionView()
         setupPresenter()
         loadInitialData()
+        
     }
     
     // MARK: - Initialization
@@ -81,10 +83,21 @@ class TVShowDetailsViewController: BaseViewController {
     }
     
     //MARK: - Helpers
+    @IBAction func homeUrlDidPressed(sender: UIButton) {
+        if let homeURl = tvShow?.homepage {
+            openURL(url: homeURl)
+        }
+    }
+    
     @IBAction func rateDidPressed(sender: UIButton) {
         if let tvShow = self.tvShow {
             tvShowDetailsPresenter?.rateTVShow(tvShow: tvShow, with: ratingView.rating)
         }
+    }
+    
+    func openURL(url: String) {
+        guard let url = URL(string: url) else { return }
+        UIApplication.shared.open(url)
     }
     
     func openTVShowDetails(tvShow: TVShow) {
@@ -153,6 +166,22 @@ extension TVShowDetailsViewController: TVShowDetailsDelegate {
         self.similerTVShowsCollectionViewDelegate?.tvShows = tvShows
         DispatchQueue.main.async {
             self.similarTVShowsCollectionView.reloadData()
+        }
+    }
+    
+    func didRatedSuccessfuly() {
+        DispatchQueue.main.async {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.rateButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+            }, completion: { _ in
+                UIView.animate(withDuration: 0.6) { [self] in
+                    self.rateButton.setTitle("", for: .normal)
+                    self.rateButton.setImage(#imageLiteral(resourceName: "ic_thumb-up.png"), for: .normal)
+                    self.rateButton.transform = CGAffineTransform.identity
+                    rateButton.isEnabled = false
+                    self.ratingView.isUserInteractionEnabled = false
+                }
+            })
         }
     }
 }

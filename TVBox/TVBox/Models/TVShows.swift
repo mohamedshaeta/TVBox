@@ -31,23 +31,6 @@ struct TVShow: Codable {
     var images: TVShowImages?
     
     let lastEpisodeToAir: TEpisodeToAir?
-//    let nextEpisodeToAir: TEpisodeToAir?
-//    let numberOfSeasons : Int?
-//    let backdropPath: String?
-//    let createdBy: [CreatedBy]?
-//    let episodeRunTime: [Int]?
-    
-//    let lastAirDate: String?
-    
-    //let originCountry: [String]?
-    //let originalLanguage, originalName
-    
-//    let popularity: Double?
-    
-//    let productionCompanies: [Network]?
-//    let status, tagline, type: String?
-    
-    
 }
 
 // MARK: - CreatedBy
@@ -68,18 +51,13 @@ struct Genre: Codable {
 struct TEpisodeToAir: Codable {
     let airDate: String?
     let episodeNumber, id: Int?
-    let name, overview, productionCode: String?
-    let seasonNumber: Int?
-    let stillPath: String?
-    let voteAverage: Double?
-    let voteCount: Int?
 }
 
 // MARK: - Network
 struct Network: Codable {
     let name: String?
     let id: Int?
-    let logoPath, originCountry: String?
+    let logoPath: String?
 }
 
 // MARK: - TVShowImages
@@ -95,8 +73,13 @@ struct Poster: Codable {
     let aspectRatio: Double?
     let filePath: String?
     let height: Int?
-    let voteAverage: Double?
-    let voteCount, width: Int?
+    let width: Int?
+}
+
+// MARK: - RateResponse
+struct RateResponse: Codable {
+    let statusCode: Int?
+    let statusMessage: String?
 }
 
 

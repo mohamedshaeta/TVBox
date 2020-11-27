@@ -13,7 +13,7 @@ protocol TVShowsListingDelegate: BaseViewDelegate {
 class TVShowsListingPresenter: BasePresenter {
     func fetchTVShows() {
         viewDelegate?.showLoading()
-        let clientManager = DependencyRegistry.sharedInstance.getCLientManager()
+        let clientManager = DependencyRegistry.sharedInstance.getClientManager()
         clientManager.dataRequest(with: TVShowsRequests.fetchTVShows, responseObjectType: TVShowsResponse.self) { (result) in
             self.viewDelegate?.hideLoading()
             switch result {

@@ -35,5 +35,8 @@ class TVShowTableViewCell: UITableViewCell {
         if let voteAverage = tvShow.voteAverage{
             averageVotingLabel.text = String(voteAverage)
         }
+        if let firstAirDate = tvShow.firstAirDate{
+            firstAirDateLabel.text = firstAirDate
+        }
     }
 }
