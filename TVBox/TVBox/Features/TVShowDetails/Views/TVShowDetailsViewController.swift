@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Cosmos
 class TVShowDetailsViewController: BaseViewController {
     
     //MARK: - Outlets
@@ -36,7 +35,6 @@ class TVShowDetailsViewController: BaseViewController {
         setupPresenter()
         loadInitialData()
     }
-    
     
     // MARK: - Initialization
     class func instantiateTVShowDetailsViewController() -> TVShowDetailsViewController {
@@ -80,10 +78,7 @@ class TVShowDetailsViewController: BaseViewController {
         similerTVShowsCollectionViewDelegate?.delegate = self
         similarTVShowsCollectionView.delegate = similerTVShowsCollectionViewDelegate
         similarTVShowsCollectionView.dataSource = similerTVShowsCollectionViewDelegate
-        
     }
-    
-    
     
     //MARK: - Helpers
     @IBAction func rateDidPressed(sender: UIButton) {

@@ -30,8 +30,8 @@ class TVShowsListingViewController: BaseViewController {
     
     // MARK: - Initialization
     class func instantiateTVShowsListingViewController() -> TVShowsListingViewController {
-        let tvShowsListingViewController = TVShowsListingViewController()
-        return tvShowsListingViewController
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        return mainStoryboard.instantiateViewController(withIdentifier: "TVShowsListingViewController") as! TVShowsListingViewController
     }
     
     func setupPresenter()  {
@@ -44,7 +44,7 @@ class TVShowsListingViewController: BaseViewController {
         self.tvShowsTableView.dataSource = self
     }
     
-    func registerTVShowsTableViewCell(){
+    func registerTVShowsTableViewCell() {
         let tvShowCell = UINib(nibName: TVShowTableViewCell.nibName, bundle: nil)
         self.tvShowsTableView.register(tvShowCell, forCellReuseIdentifier: TVShowTableViewCell.identifier )
     }
@@ -54,12 +54,6 @@ class TVShowsListingViewController: BaseViewController {
         tvShowDetailsView.tvShow = tvShow
         self.navigationController?.pushViewController(tvShowDetailsView, animated: true)
     }
-    
-    func setupRatingView() {
-        
-    }
-    
-    
 }
 
 //MARK: - Extensions

@@ -17,28 +17,36 @@ struct TVShowsResponse: Codable {
 
 // MARK: - TVShow
 struct TVShow: Codable {
-    let backdropPath: String?
-    let createdBy: [CreatedBy]?
-    let episodeRunTime: [Int]?
+    let voteAverage: Double?
     let firstAirDate: String?
     let genres: [Genre]?
     let homepage: String?
     let id: Int
-    let lastAirDate: String?
-    let lastEpisodeToAir: TEpisodeToAir?
     let name: String?
-    let nextEpisodeToAir: TEpisodeToAir?
     let networks: [Network]?
-    let numberOfEpisodes, numberOfSeasons: Int?
-    let originCountry: [String]?
-    let originalLanguage, originalName, overview: String?
-    let popularity: Double?
+    let numberOfEpisodes: Int?
     let posterPath: String?
-    let productionCompanies: [Network]?
-    let status, tagline, type: String?
-    let voteAverage: Double?
+    let overview: String?
     let voteCount: Int?
     var images: TVShowImages?
+    
+    let lastEpisodeToAir: TEpisodeToAir?
+//    let nextEpisodeToAir: TEpisodeToAir?
+//    let numberOfSeasons : Int?
+//    let backdropPath: String?
+//    let createdBy: [CreatedBy]?
+//    let episodeRunTime: [Int]?
+    
+//    let lastAirDate: String?
+    
+    //let originCountry: [String]?
+    //let originalLanguage, originalName
+    
+//    let popularity: Double?
+    
+//    let productionCompanies: [Network]?
+//    let status, tagline, type: String?
+    
     
 }
 
