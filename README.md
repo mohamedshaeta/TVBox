@@ -10,7 +10,7 @@ It does not need any external library.
 
 # Screenshots
 
-<img src="Screenshots/screenShot2.png" width="250"> | <img src="Screenshots/screenShot3.png" width="250"> | <img src="Screenshots/screenShot1.png" width="250"> 
+<img src="TVBox/Screenshots/screenShot2.png" width="250"> | <img src="TVBox/Screenshots/screenShot3.png" width="250"> | <img src="TVBox/Screenshots/screenShot1.png" width="250"> 
 
 
 
