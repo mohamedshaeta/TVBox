@@ -42,7 +42,6 @@ class TVShowDetailsViewTests: XCTestCase {
         //then
         XCTAssertNotNil(tvShowdetailsView.postersCollectionView, "Failed to initialize the tvShowsTableView.")
         
-        XCTAssertTrue(tvShowdetailsView.postersCollectionView.delegate as? PhotosCollectionViewDelegate == tvShowdetailsView.photosCollectionViewDelegate, "Failed to assign postersCollectionView delegate.")
         XCTAssertTrue(tvShowdetailsView.postersCollectionView.dataSource as? PhotosCollectionViewDelegate == tvShowdetailsView.photosCollectionViewDelegate, "Failed to assign postersCollectionView datasource.")
     }
     

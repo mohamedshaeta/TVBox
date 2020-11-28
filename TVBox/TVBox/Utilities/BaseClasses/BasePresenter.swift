@@ -12,9 +12,6 @@ protocol BaseViewDelegate {
     func showLoading()
     func hideLoading()
 }
-protocol BaseModelViewDelegate: BaseViewDelegate {
-    func dismissCurrentView()
-}
 
 class BasePresenter {
     var viewDelegate: BaseViewDelegate?

@@ -56,14 +56,13 @@ class ClientManager {
             }
             
             do {
-                let dataStr = String(data: data, encoding: String.Encoding.utf8)
-                //    print(dataStr)
                 if  responseObjectType != String.self {
                     let jsonDecoder = JSONDecoder()
                     jsonDecoder.keyDecodingStrategy = .convertFromSnakeCase
                     let decodedObject = try jsonDecoder.decode(responseObjectType.self, from: data)
                     completion(Result.success(decodedObject))
                 }else {
+                    let dataStr = String(data: data, encoding: String.Encoding.utf8)
                     completion(Result.success(dataStr as! T))
                 }
             } catch let error {

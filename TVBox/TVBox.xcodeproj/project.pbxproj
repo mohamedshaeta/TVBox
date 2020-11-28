@@ -296,8 +296,8 @@
 		8209D07A256F9E4F006F4E9F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				822C0804257295190020CCA9 /* ViewController */,
 				8209D0D4256FAFE3006F4E9F /* Cells */,
-				8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -390,6 +390,14 @@
 				8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		822C0804257295190020CCA9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		82567CBC2570C9A100CA2CE9 /* Features */ = {
@@ -802,7 +810,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TVBox/AppFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -821,7 +829,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TVBox/AppFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

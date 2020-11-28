@@ -29,14 +29,14 @@ enum ClientError: Error {
     }
 }
 
-enum Result<T> {
-    case success(T)
-    case failure(ClientError)
-}
-
 protocol Request {
     var path: String { get }
     var parameters: Any? { get }
     var method: String { get }
     var headers: [String:String]? { get }
+}
+
+enum Result<T> {
+    case success(T)
+    case failure(ClientError)
 }

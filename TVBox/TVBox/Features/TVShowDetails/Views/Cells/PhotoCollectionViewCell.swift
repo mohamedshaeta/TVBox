@@ -17,8 +17,8 @@ class PhotoCollectionViewCell: UICollectionViewCell {
     }
     
     func populateCard(poster : Poster) {
-        if let photoUrl = poster.filePath {
-            tvShowPosterImageView.downloadImage(from: Keys.ImageBaseUrl + photoUrl, completion: nil)
+        if let poseterUrl = poster.filePath {
+            tvShowPosterImageView.downloadImage(from: Keys.ImageBaseUrl + poseterUrl, completion: nil)
         }
     }
 

@@ -8,24 +8,22 @@
 import UIKit
 
 class TVShowsListingViewController: BaseViewController {
-
+    
     //MARK: - Outlets
     @IBOutlet weak var tvShowsTableView: UITableView!
-    
     
     //MARK: - Global Properties
     var tvShowsPresenter: TVShowsListingPresenter?
     var tvShows: TVShows?
     
-    
     //MARK: - ViewCOntroller life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         registerTVShowsTableViewCell()
         setupTVShowsTableViewCell()
         setupPresenter()
-        tvShowsPresenter?.fetchTVShows()
+        tvShowsPresenter?.fetchInitialData()
     }
     
     // MARK: - Initialization
@@ -48,6 +46,7 @@ class TVShowsListingViewController: BaseViewController {
         let tvShowCell = UINib(nibName: TVShowTableViewCell.nibName, bundle: nil)
         self.tvShowsTableView.register(tvShowCell, forCellReuseIdentifier: TVShowTableViewCell.identifier )
     }
+    
     //MARK: - Helpers
     func openTVShowDetails(tvShow: TVShow) {
         let tvShowDetailsView = TVShowDetailsViewController.instantiateTVShowDetailsViewController()
@@ -74,8 +73,6 @@ extension TVShowsListingViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tvShowCell = tableView.dequeueReusableCell(withIdentifier: TVShowTableViewCell.identifier) as! TVShowTableViewCell
-        tvShowCell.selectionStyle = .none
-        
         let tvShow = tvShows![indexPath.row]
         tvShowCell.populateTVShowCard(tvShow: tvShow)
         return tvShowCell

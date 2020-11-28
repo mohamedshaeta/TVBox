@@ -42,10 +42,4 @@ extension UIImageView {
             return }
         downloadImage(from: url, placeHolder: placeHolder, completion: completion)
     }
-    
-    func roundImage() {
-        self.frame = CGRect(origin: self.frame.origin, size: CGSize(width: self.frame.width,height: self.frame.width))
-        self.layer.cornerRadius = self.frame.width/2
-        self.layer.masksToBounds = true
-    }
 }

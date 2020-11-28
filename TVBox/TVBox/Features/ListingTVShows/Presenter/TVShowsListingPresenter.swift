@@ -11,6 +11,11 @@ protocol TVShowsListingDelegate: BaseViewDelegate {
 }
 
 class TVShowsListingPresenter: BasePresenter {
+    
+    func fetchInitialData() {
+        fetchTVShows()
+    }
+    
     func fetchTVShows() {
         viewDelegate?.showLoading()
         let clientManager = DependencyRegistry.sharedInstance.getClientManager()

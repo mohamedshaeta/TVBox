@@ -13,7 +13,6 @@ class TVShowCollectionViewCell: UICollectionViewCell {
     static let nibName = "TVShowCollectionViewCell"
 
     @IBOutlet weak private var tvShowPosterImageView: UIImageView!
-    @IBOutlet weak private var titleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,10 +21,6 @@ class TVShowCollectionViewCell: UICollectionViewCell {
     func populateCard(tvShow : TVShow) {
         if let photoUrl = tvShow.posterPath {
             tvShowPosterImageView.downloadImage(from: Keys.ImageBaseUrl + photoUrl, completion: nil)
-        }
-        
-        if let title = tvShow.name {
-            titleLabel.text = title
         }
     }
 

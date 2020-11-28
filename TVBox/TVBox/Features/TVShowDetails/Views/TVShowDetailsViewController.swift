@@ -28,13 +28,13 @@ class TVShowDetailsViewController: BaseViewController {
     var photosCollectionViewDelegate: PhotosCollectionViewDelegate?
     var similerTVShowsCollectionViewDelegate: SimilerTVShowsCollectionViewDelegate?
     
-    //MARK: - ViewCOntroller life cycle methods
+    //MARK: - ViewController life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPostersCollectionView()
         setupsSimilarTVShowsCollectionView()
         setupPresenter()
-        loadInitialData()
+        fetchInitialData()
         
     }
     
@@ -49,11 +49,9 @@ class TVShowDetailsViewController: BaseViewController {
         tvShowDetailsPresenter?.attach(to: self)
     }
     
-    func loadInitialData() {
+    func fetchInitialData() {
         if let tvShow = tvShow {
-            tvShowDetailsPresenter?.fetchTVShowDetails(tvShow: tvShow)
-            tvShowDetailsPresenter?.fetchTVShowImages(tvShow: tvShow)
-            tvShowDetailsPresenter?.fetchSimilarTVShows(tvShow: tvShow)
+            tvShowDetailsPresenter?.fetchInitialData(tvShow: tvShow)
         }
     }
     
@@ -70,7 +68,6 @@ class TVShowDetailsViewController: BaseViewController {
     func setupPostersCollectionView() {
         registerPhotoCollectionViewCells()
         photosCollectionViewDelegate = PhotosCollectionViewDelegate()
-        postersCollectionView.delegate = photosCollectionViewDelegate
         postersCollectionView.dataSource = photosCollectionViewDelegate
     }
     
@@ -145,7 +142,7 @@ class TVShowDetailsViewController: BaseViewController {
     }
 }
 //MARK: - Extensions
-//MARK: Preseter
+//MARK: Presenter
 extension TVShowDetailsViewController: TVShowDetailsDelegate {
     func updateTVShowImages(tvShowImages: TVShowImages) {
         self.tvShow?.images = tvShowImages
@@ -170,6 +167,10 @@ extension TVShowDetailsViewController: TVShowDetailsDelegate {
     }
     
     func didRatedSuccessfuly() {
+       animateDisableRateButton()
+    }
+    
+    func animateDisableRateButton() {
         DispatchQueue.main.async {
             UIView.animate(withDuration: 0.2, animations: {
                 self.rateButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
@@ -190,5 +191,4 @@ extension TVShowDetailsViewController: SimilerTVShowsDelegate {
     func didSelectTVShow(tvShow: TVShow) {
         openTVShowDetails(tvShow: tvShow)
     }
-    
 }

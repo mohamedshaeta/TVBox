@@ -29,7 +29,6 @@ struct TVShow: Codable {
     let overview: String?
     let voteCount: Int?
     var images: TVShowImages?
-    
     let lastEpisodeToAir: TEpisodeToAir?
 }
 
@@ -84,5 +83,4 @@ struct RateResponse: Codable {
 
 
 typealias TVShows = [TVShow]
-
 typealias Posters = [Poster]

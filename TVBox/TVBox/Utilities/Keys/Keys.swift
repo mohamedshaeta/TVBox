@@ -24,6 +24,4 @@ class Keys{
            return Bundle.main.object(forInfoDictionaryKey: "Moviedb_API_Key") as? String ?? ""
         }
     }
-    
-    
 }

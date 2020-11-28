@@ -37,9 +37,4 @@ extension String {
 
         return percentEncodedUrl
     }
-    func convertBase64StringToImage () -> UIImage {
-        let imageData = Data.init(base64Encoded: self, options: .init(rawValue: 0))
-        let image = UIImage(data: imageData!)
-        return image!
-    }
 }

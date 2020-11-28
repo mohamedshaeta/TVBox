@@ -97,16 +97,16 @@
                                         </constraints>
                                     </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Epz-XI-9wg">
-                                        <rect key="frame" x="0.0" y="658" width="375" height="190"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="0.0" y="658" width="375" height="160"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="190" id="rDq-bO-aKH"/>
+                                            <constraint firstAttribute="height" constant="160" id="rDq-bO-aKH"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mM9-Py-qQX">
-                                            <size key="itemSize" width="250" height="190"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="8" id="mM9-Py-qQX">
+                                            <size key="itemSize" width="120" height="160"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells/>
                                     </collectionView>
@@ -184,6 +184,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enn-sO-KxX">
                                                 <rect key="frame" x="16" y="30.5" width="30" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="homeUrlDidPressedWithSender:" destination="si2-7x-DR3" eventType="touchUpInside" id="qd0-5K-TNc"/>
                                                 </connections>
@@ -244,11 +247,8 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-NG-aTe">
-                                                <rect key="frame" x="329" y="71" width="38" height="34"/>
+                                                <rect key="frame" x="330" y="71" width="37" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="RateButton"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="38" id="QBV-pu-TiB"/>
-                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                 <state key="normal" title="Rate">
                                                     <color key="titleColor" systemColor="linkColor"/>
@@ -365,6 +365,9 @@
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

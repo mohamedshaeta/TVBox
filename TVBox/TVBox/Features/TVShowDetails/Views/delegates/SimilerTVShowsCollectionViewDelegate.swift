@@ -15,7 +15,7 @@ class SimilerTVShowsCollectionViewDelegate: NSObject, UICollectionViewDataSource
     var tvShows: TVShows?
     var delegate: SimilerTVShowsDelegate?
     
-     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let tvShow = tvShows?[indexPath.row] {
             delegate?.didSelectTVShow(tvShow: tvShow)
         }
