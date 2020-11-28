@@ -38,6 +38,6 @@ SSH: git clone git@github.com:mohamedshaeta/TVBox.git
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
 
-[screenshot1]:  screenShot1.png
-[screenshot2]:  screenShot2.png
-[screenshot3]:  screenShot3.png
+[screenshot1]:  TVBox/screenShot1.png
+[screenshot2]:  TVBox/screenShot2.png
+[screenshot3]:  TVBox/TVBox/screenShot3.png
