@@ -10,7 +10,7 @@ It does not need any external library.
 
 # Screenshots
 
-<img src="TVBox/Screenshots/screenShot2.png" width="250"> | <img src="TVBox/Screenshots/screenShot3.png" width="250"> | <img src="TVBox/Screenshots/screenShot1.png" width="250"> 
+<img src="TVBox/Screenshots/screenShot1.png" width="250"> | <img src="TVBox/Screenshots/screenShot2.png" width="250"> | <img src="TVBox/Screenshots/screenShot3.png" width="250"> 
 
 
 
@@ -40,4 +40,4 @@ SSH: git clone git@github.com:mohamedshaeta/TVBox.git
 
 [screenshot1]:  TVBox/screenShot1.png
 [screenshot2]:  TVBox/screenShot2.png
-[screenshot3]:  TVBox/TVBox/screenShot3.png
+[screenshot3]:  TVBox/screenShot3.png
