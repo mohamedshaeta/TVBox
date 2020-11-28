@@ -1,0 +1,15 @@
+/* error_timeout */
+"An error occurred connecting to the server. You can try again.." = "حدث خطأ أثناء الاتصال بالخادم. يمكنك إعادة المحاولة..";
+
+/* error_server */
+"An error occurred with the server. You can try again." = "حدث خطأ مع الخادم. يمكنك إعادة المحاولة.";
+
+/* Alert Error Title */
+"Error" = "خطأ";
+
+/* error_server */
+"It seems you're not connected to the internet." = "يبدو أنك غير متصل بالإنترنت.";
+
+/* error_user */
+"Sorry, Unuthorized user" = "عذرا ، مستخدم غير مصرح به";
+

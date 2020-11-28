@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "9/10"; ObjectID = "R44-oM-TUx"; */
+"R44-oM-TUx.text" = "9/10";
+
+/* Class = "UILabel"; text = "first air date"; ObjectID = "Vw8-oH-hlD"; */
+"Vw8-oH-hlD.text" = "تاريخ العرض الأول:";
+
+/* Class = "UILabel"; text = "First air date:"; ObjectID = "Xt8-T3-XtR"; */
+"Xt8-T3-XtR.text" = "تاريخ العرض الأول:";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "jCd-Mz-w9U"; */
+"jCd-Mz-w9U.text" = "Title";

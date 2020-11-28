@@ -1,0 +1,18 @@
+/* Class = "UINavigationItem"; title = "TV Box"; ObjectID = "Eeq-ap-Whq"; */
+"Eeq-ap-Whq.title" = "TVBox";
+
+/* Class = "UILabel"; text = "Episode:"; ObjectID = "htO-Q2-T1l"; */
+"htO-Q2-T1l.text" = "الحلقه";
+
+/* Class = "UIButton"; normalTitle = "Rate"; ObjectID = "iOK-NG-aTe"; */
+"iOK-NG-aTe.normalTitle" = "قيم";
+
+/* Class = "UILabel"; text = "Network(s):"; ObjectID = "NSD-Fd-QKl"; */
+"NSD-Fd-QKl.text" = "القنوات";
+
+/* Class = "UILabel"; text = "9/10"; ObjectID = "ykK-Fp-hYk"; */
+"ykK-Fp-hYk.text" = "ykK-Fp-hYk.text";
+
+/* Class = "UILabel"; text = "More Like This"; ObjectID = "yyW-ys-9M2"; */
+"yyW-ys-9M2.text" = "المزيد مثل هذا";
+

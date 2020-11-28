@@ -110,6 +110,7 @@ class TVShowDetailsViewController: BaseViewController {
         
         if let title = tvShow.name {
             tvShowTitleLabel.text = title
+            self.title = title
         }
         
         if let voteAverage = tvShow.voteAverage{

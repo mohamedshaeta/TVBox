@@ -27,8 +27,10 @@
 		8209D0C7256FAA14006F4E9F /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209D0C6256FAA14006F4E9F /* LoadingView.xib */; };
 		8209D0D0256FABC0006F4E9F /* TVShowsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */; };
 		8209D0D7256FB001006F4E9F /* TVShowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */; };
-		8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */; };
 		8209D0DD256FB24D006F4E9F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8209D0DC256FB24D006F4E9F /* UIImageView.swift */; };
+		822C081E2572A6D20020CCA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 822C081C2572A6D20020CCA9 /* InfoPlist.strings */; };
+		822C08212572A6D20020CCA9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 822C081F2572A6D20020CCA9 /* Localizable.strings */; };
+		822C08252572A7EE0020CCA9 /* TVShowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822C08272572A7EE0020CCA9 /* TVShowTableViewCell.xib */; };
 		82567CBF2570CA0700CA2CE9 /* ListingViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82567CBE2570CA0700CA2CE9 /* ListingViewTests.swift */; };
 		82567CC72570CA1F00CA2CE9 /* ListingPresnterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82567CC62570CA1F00CA2CE9 /* ListingPresnterTests.swift */; };
 		82567CDA2570E34000CA2CE9 /* TVShowDetailsViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82567CD92570E34000CA2CE9 /* TVShowDetailsViewTests.swift */; };
@@ -93,8 +95,13 @@
 		8209D0C6256FAA14006F4E9F /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		8209D0CF256FABC0006F4E9F /* TVShowsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsListingViewController.swift; sourceTree = "<group>"; };
 		8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowTableViewCell.swift; sourceTree = "<group>"; };
-		8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowTableViewCell.xib; sourceTree = "<group>"; };
 		8209D0DC256FB24D006F4E9F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		822C08142572A5050020CCA9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		822C08182572A5050020CCA9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		822C081D2572A6D20020CCA9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		822C08202572A6D20020CCA9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		822C082B2572A7F10020CCA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TVShowTableViewCell.xib; sourceTree = "<group>"; };
+		822C082C2572A7FE0020CCA9 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/TVShowTableViewCell.strings; sourceTree = "<group>"; };
 		82567CBE2570CA0700CA2CE9 /* ListingViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingViewTests.swift; sourceTree = "<group>"; };
 		82567CC62570CA1F00CA2CE9 /* ListingPresnterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingPresnterTests.swift; sourceTree = "<group>"; };
 		82567CD92570E34000CA2CE9 /* TVShowDetailsViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDetailsViewTests.swift; sourceTree = "<group>"; };
@@ -271,6 +278,8 @@
 				8209D028256F9A4C006F4E9F /* AppDelegate.swift */,
 				8209D033256F9A4E006F4E9F /* LaunchScreen.storyboard */,
 				8209D036256F9A4E006F4E9F /* Info.plist */,
+				822C081F2572A6D20020CCA9 /* Localizable.strings */,
+				822C081C2572A6D20020CCA9 /* InfoPlist.strings */,
 			);
 			path = AppFiles;
 			sourceTree = "<group>";
@@ -387,7 +396,7 @@
 			isa = PBXGroup;
 			children = (
 				8209D0D5256FB001006F4E9F /* TVShowTableViewCell.swift */,
-				8209D0D6256FB001006F4E9F /* TVShowTableViewCell.xib */,
+				822C08272572A7EE0020CCA9 /* TVShowTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -551,6 +560,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 8209D01C256F9A4C006F4E9F;
 			packageReferences = (
@@ -572,11 +582,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8209D035256F9A4E006F4E9F /* LaunchScreen.storyboard in Resources */,
+				822C081E2572A6D20020CCA9 /* InfoPlist.strings in Resources */,
 				825EEC7D257014920012DB5C /* TVShowCollectionViewCell.xib in Resources */,
 				8209D0C7256FAA14006F4E9F /* LoadingView.xib in Resources */,
+				822C08212572A6D20020CCA9 /* Localizable.strings in Resources */,
 				8209D032256F9A4E006F4E9F /* Assets.xcassets in Resources */,
 				825EEC4D256FDB730012DB5C /* PhotoCollectionViewCell.xib in Resources */,
-				8209D0D8256FB001006F4E9F /* TVShowTableViewCell.xib in Resources */,
+				822C08252572A7EE0020CCA9 /* TVShowTableViewCell.xib in Resources */,
 				8209D030256F9A4C006F4E9F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +684,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				8209D02F256F9A4C006F4E9F /* Base */,
+				822C08142572A5050020CCA9 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -680,8 +693,34 @@
 			isa = PBXVariantGroup;
 			children = (
 				8209D034256F9A4E006F4E9F /* Base */,
+				822C08182572A5050020CCA9 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		822C081C2572A6D20020CCA9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822C081D2572A6D20020CCA9 /* ar */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		822C081F2572A6D20020CCA9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822C08202572A6D20020CCA9 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		822C08272572A7EE0020CCA9 /* TVShowTableViewCell.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822C082B2572A7F10020CCA9 /* Base */,
+				822C082C2572A7FE0020CCA9 /* ar */,
+			);
+			name = TVShowTableViewCell.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -691,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -752,6 +792,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
