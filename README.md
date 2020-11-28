@@ -1,6 +1,6 @@
 # TVBox
 
-[![Swift Version][swift-image]][swift-url]
+[![Swift Version][Swift]][swift-url]
 [![Platform](https://img.shields.io/cocoapods/p/LFAlertController.svg?style=flat)](http://cocoapods.org/pods/LFAlertController)
 ![Swift](https://github.com/mohamedshaeta/TVBox/workflows/Swift/badge.svg?branch=main)
 
