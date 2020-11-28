@@ -184,6 +184,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enn-sO-KxX">
                                                 <rect key="frame" x="16" y="30.5" width="30" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <connections>
+                                                    <action selector="homeUrlDidPressedWithSender:" destination="si2-7x-DR3" eventType="touchUpInside" id="qd0-5K-TNc"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTh-ew-Ics">
                                                 <rect key="frame" x="113.5" y="26.5" width="0.0" height="0.0"/>
@@ -242,6 +245,7 @@
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOK-NG-aTe">
                                                 <rect key="frame" x="369" y="71" width="37" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="RateButton"/>
                                                 <state key="normal" title="Rate">
                                                     <color key="titleColor" systemColor="linkColor"/>
                                                 </state>

@@ -46,6 +46,7 @@
 		825EEC762570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC752570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift */; };
 		825EEC7C257014920012DB5C /* TVShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825EEC7A257014920012DB5C /* TVShowCollectionViewCell.swift */; };
 		825EEC7D257014920012DB5C /* TVShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 825EEC7B257014920012DB5C /* TVShowCollectionViewCell.xib */; };
+		82DFDA2D25724A07005AB268 /* TVShowsListingPresenterIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DFDA2C25724A07005AB268 /* TVShowsListingPresenterIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		825EEC752570147C0012DB5C /* SimilerTVShowsCollectionViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimilerTVShowsCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		825EEC7A257014920012DB5C /* TVShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCollectionViewCell.swift; sourceTree = "<group>"; };
 		825EEC7B257014920012DB5C /* TVShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVShowCollectionViewCell.xib; sourceTree = "<group>"; };
+		82DFDA2C25724A07005AB268 /* TVShowsListingPresenterIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsListingPresenterIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,9 +202,9 @@
 		8209D03E256F9A4E006F4E9F /* TVBoxTests */ = {
 			isa = PBXGroup;
 			children = (
-				82567D0325713E8400CA2CE9 /* Integration */,
 				82567CBC2570C9A100CA2CE9 /* Features */,
 				82567CBD2570C9AF00CA2CE9 /* Network */,
+				82567D0325713E8400CA2CE9 /* Integration */,
 				8209D041256F9A4E006F4E9F /* Info.plist */,
 			);
 			path = TVBoxTests;
@@ -438,6 +440,7 @@
 		82567D0325713E8400CA2CE9 /* Integration */ = {
 			isa = PBXGroup;
 			children = (
+				82DFDA2C25724A07005AB268 /* TVShowsListingPresenterIntegrationTests.swift */,
 			);
 			path = Integration;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				82567CDA2570E34000CA2CE9 /* TVShowDetailsViewTests.swift in Sources */,
 				82567CBF2570CA0700CA2CE9 /* ListingViewTests.swift in Sources */,
 				82567CFC2571028200CA2CE9 /* ClientInterfacesTests.swift in Sources */,
+				82DFDA2D25724A07005AB268 /* TVShowsListingPresenterIntegrationTests.swift in Sources */,
 				82567CEA2570F9E100CA2CE9 /* ClientManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
